@@ -1,0 +1,11 @@
+<form method="POST" action="/fossee4/ImagebyUser" enctype="multipart/form-data">
+    {% csrf_token %}
+
+Enter the name of user:
+<input name="user" type="text">
+
+<button type="submit">
+    submit
+</button>
+
+</form>

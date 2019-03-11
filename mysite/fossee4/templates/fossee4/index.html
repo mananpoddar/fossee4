@@ -1,0 +1,90 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>front_page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,600" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Amethysta' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="{% static "fossee1/index.css" %}">
+    <script src="{% static "fossee1/topnav.js" %}"></script>
+</head>
+<body>
+    <div class="cursive">
+        <br>
+        <div>Hi there ! Welcome to our first ever sharing platform for codes , happy coding nitkians .</div><br>Web Club
+        NITK <br><br>
+        <a href="https://www.facebook.com/web.club.nitk/" class="font"><i class="fa fa-facebook"
+                style="font-size:25px  ; height: 30px; width: 30px;"></i> </a>
+
+        <a href="https://github.com/WebClub-NITK" class="font"><i class="fa fa-github"
+                style="font-size:25px  ; height: 30px; width: 30px;"></i></a>
+
+
+    </div>
+
+    <div class="container" style="text-align: center"> <a href="{% url "fossee4:uploadImage" %}"
+            class="btn btn-primary">upload Image</a></div><br><br><br>
+<br>
+
+    <div class="container" style="text-align: center"> <a href="{% url "fossee4:getallImages" %}"
+        class="btn btn-primary">get all Images</a></div><br><br><br>
+
+<br>
+
+    <div class="container" style="text-align: center"> <a href="{% url "fossee4:ImagebyId" %}"
+        class="btn btn-primary">get Image by id</a></div><br><br><br>
+
+<br>
+
+    <div class="container" style="text-align: center"> <a href="{% url "fossee4:ImagebyUser" %}"
+        class="btn btn-primary">get Image of particular user</a></div><br><br><br>
+
+<br>
+
+    <div class="container" style="text-align: center"> <a href="{% url "fossee4:doImageUpdate" %}"
+        class="btn btn-primary">update/Delete Image</a></div><br><br><br>
+
+
+
+<nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a href="#!" onclick="callaboutme()" class="navbar-brand">About application</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li> <a href="#!" class="active" onclick="callhowitstarted()">how it started</a> </li>
+                    <li> <a href="#!" class="dropdown" onclick="callwhywebclub()">why_web_club</a></li>
+                    <li> <a href="#!" onclick="callcontact()">Contact me</a></li>
+                </ul>
+            </div>
+    </nav>
+    <div class="container">
+        <div class="main_content" style="font-family:Amethysta">
+            <div id="demo">
+                <div>About this project <br><br>
+                    This web application is built on the top of django , it allows you to conveniently share your codes
+                    with anyone with just one link !
+                    <div style="text-indent: 1em">It also allows you to manage your shared code so that you can refer
+                        them whenever you need it.I
+                        would really like to know how you feel about the application , to give feedback you can contact
+                        me through contact section. </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br>
+
+    <body>

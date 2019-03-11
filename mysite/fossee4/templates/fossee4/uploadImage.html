@@ -1,0 +1,19 @@
+
+<form method="POST" action="/fossee4/uploadImage" enctype="multipart/form-data">
+    {% csrf_token %}
+
+{{form.ide}}
+
+{{form.name}}
+
+{{form.description}}
+
+{{form.image}}
+
+{{form.createdby}}
+
+<button type="submit">
+    submit
+</button>
+
+</form>

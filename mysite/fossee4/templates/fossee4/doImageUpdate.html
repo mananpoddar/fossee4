@@ -1,0 +1,17 @@
+<form method="POST" action="/fossee4/doImageUpdate" enctype="multipart/form-data">
+    {% csrf_token %}
+
+Enter id of the image which you want to Update/Delete:
+<input name="id" type="text">
+
+<button value="update" name="update" type="submit">
+   update
+</button>
+<br>
+
+
+<button value="delete" name="delete" type="submit">
+    delete
+</button>
+
+</form>
