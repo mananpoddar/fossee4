@@ -9,8 +9,9 @@ urlpatterns = [
     url(r'^ImagebyId$', views.ImagebyId, name='ImagebyId'),
     url(r'^ImagebyUser$', views.ImagebyUser, name='ImagebyUser'),
     url(r'^doImageUpdate$', views.doImageUpdate, name='doImageUpdate'),
-    url(r'^ImageUpdate/(?P<ide>[0-9]+)/', views.ImageUpdate, name='ImageUpdate'),
-    url(r'^ImageDelete/(?P<ide>[0-9]+)/', views.ImageDelete, name='ImageDelete'),
+    url(r'^ImageUpdate/(?P<uniqueId>[0-9]+)/', views.ImageUpdate, name='ImageUpdate'),
+    url(r'^ImageDelete/(?P<uniqueId>[0-9]+)/', views.ImageDelete, name='ImageDelete'),
+
 
 
 

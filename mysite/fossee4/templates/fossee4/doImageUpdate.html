@@ -1,17 +1,29 @@
+
+{% load staticfiles %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="{% static "fossee4/index.css" %}">
+
+<div class="container imageByid">
+
 <form method="POST" action="/fossee4/doImageUpdate" enctype="multipart/form-data">
-    {% csrf_token %}
+{% csrf_token %}
+    <div class="form-group">
+            <label>Enter id of the image which you want to Update/Delete:</label>
+            <input class="form-control" name="id" type="text">
+            <br>
+            
+<button class="btn btn-primary" value="update" name="update" type="submit">
+        update
+     </button>
+     <br>     <br>
+     <br>
 
-Enter id of the image which you want to Update/Delete:
-<input name="id" type="text">
-
-<button value="update" name="update" type="submit">
-   update
-</button>
-<br>
-
-
-<button value="delete" name="delete" type="submit">
-    delete
-</button>
-
+     
+     
+     <button class="btn btn-primary" value="delete" name="delete" type="submit">
+         delete
+     </button>
+    </div>
 </form>
+
+</div>

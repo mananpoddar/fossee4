@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'fossee4.apps.Fossee4Config'
+    'fossee4.apps.Fossee4Config',
+    'widget_tweaks',
 ]
 
 MIDDLEWARE = [
