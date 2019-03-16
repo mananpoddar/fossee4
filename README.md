@@ -4,7 +4,7 @@ Project for IITB summer Internship Entrance
 
 - Clone the repo
 ``` 
-git clone https://github.com/mananpoddar/NITK-STEP
+git clone https://github.com/mananpoddar/fossee4
 cd mysite
 ```
 - Create a virtualenv
