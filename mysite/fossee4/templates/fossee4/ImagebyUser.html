@@ -9,7 +9,7 @@
 <form method="POST" action="/fossee4/ImagebyUser" enctype="multipart/form-data">
 {% csrf_token %}
     <div class="form-group">
-            <label>Enter the name of user:</label>
+            <label>Enter the name of user(which you have entered in created by field):</label>
             <input class="form-control" name="user" type="text">
             <br>
             <button class="btn btn-primary"type="submit">
