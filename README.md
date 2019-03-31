@@ -1,5 +1,13 @@
 # fossee4
-Project for IITB summer Internship Entrance in Open source
+Project for IITB summer Internship Entrance in Open source<br>
+Please see the demo video on maximum possible volume with Earphones.<br>
+
+-About the application
+
+It's an application simulating an API for images, where user can use the image by Id.<br>
+And the Id will be returned by the API itself.
+
+<b> Setting up the project:</b>
 
 - Clone the repo
 ``` 
@@ -33,7 +41,8 @@ python manage.py runserver
 - request localhost:8000/fossee4
 
 <br><br>
-- Important directories and files to make your look up to the code easier
+
+<b>Important directories and files to make your look up to the code easier:</b>
 ```
 core backend logic - > fossee4/mysite/fossee4/views.py
 core frontend logic - > fossee4/mysite/fossee4/static/fossee4/ajax.js
