@@ -25,8 +25,6 @@ do python manage.py makemigrations
 then, python manage.py migrate
 ```
 
-- close any libreoffice application running on your system for better experience
-
 - Run the dev server
 ```
 python manage.py runserver
